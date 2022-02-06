@@ -13,4 +13,7 @@ node ('workers') {
                 sh "pwd"
             }
         }
+    stage('Build') {
+        docker.build(imageName)
+    }
 }

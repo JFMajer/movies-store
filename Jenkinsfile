@@ -10,6 +10,7 @@ node ('workers') {
         stage('Quality Tests') {
             imageTest.inside{
                 sh "ls -la"
+                sh "pwd"
             }
         }
 }
